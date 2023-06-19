@@ -1,0 +1,239 @@
+.nav-bar{
+    height: auto;
+    width: 100%;
+}
+.upper-nav{
+    background-color: #131921;
+    height: 64px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    color: white;
+}
+.logo{
+    margin-top: -2px;
+    height: 120%;
+    width: auto;
+    padding: 5px 5px 0 5px;
+    box-sizing: border-box;
+}
+.logo:hover{
+    outline: 1.5px solid white;
+
+}
+.search-bar{
+    height: 40px;
+    margin: 0 8px 0 16px;
+    background-color: #FCD34D;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.search-box{
+    padding: 0 8px 0 8px;
+    height: 100%;
+    flex-grow: 1;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size: 16px;
+}
+.search-bar:hover{
+    background-color: #FBBF24;
+}
+.search-box:focus{
+    outline: none;
+}
+.search-icon{
+    height: 45px;
+    width: 30px;
+    padding: 0 10px 0 10px;
+    color: black;
+}
+.right-nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-left: 16px;
+    box-sizing: border-box;
+}
+.right-nav-item{
+    height: 100%;
+    margin: 0px 4px 0 4px;
+    cursor: pointer;
+    padding: 0px 5px 0px 5px;
+}
+.right-nav-item:hover{
+    outline: 1.5px solid white;
+}
+.cart{
+    display: flex;
+}
+.cart-logo{
+    height: 40px;
+    width: auto;
+    padding: 10px 6px 10px 6px;
+    position: relative;
+    bottom: 5px;
+}
+.cart-text{
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    position: relative;
+    top: 15px;
+}
+.cart-size{
+    border-radius: 10px;
+    background-color: #FCD34D;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+    color: black;
+    position: relative;
+    right: 55px;
+}
+.bold-text{
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: -10px;
+}
+.text{
+    position: relative;
+    top: -10px;
+}
+@media (width < 900px){
+    .return{
+        display: none;
+    }
+}
+@media (width < 820px){
+    .right-nav{
+        margin-left: 10px;
+    }
+    .bold-text{
+        font-size: 15px;
+    }
+    .text{
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+}
+.filter-icon{
+    font-size: 1.5rem;
+    position: relative;
+    top: 2px;
+    left: 10px;
+    margin-right: 20px;
+}
+.navbar-dropdown{
+    width:250px;
+    box-sizing: border-box;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.lower-nav{
+    background-color: #232f3e;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+div.lower-nav p:hover{
+    outline: 1px solid white;
+    height: 90%;
+}
+.lower-nav-icon{
+    display: flex;
+}
+.all-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.lower-nav-search-bar{
+    display: none;
+}
+@media (width<1100px){
+    .one{
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+}
+@media (width < 1030px){
+    .one{
+        font-size: 0.9rem;
+    }
+}
+@media(width < 970px){
+    .one{
+        font-size: 0.8rem;
+        margin-left: 9px;
+    }
+}
+@media (width<900px){
+    .all{
+        display: none;
+    }
+}
+@media (width<770px){
+    .one{
+        display: none;
+    }
+    .lower-nav-search-bar{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .upper-nav-search-bar{
+        display: none;
+    }
+    .lower-nav{
+        height: 50px;
+    }
+    .right-nav{
+        margin-left: auto;
+    }
+}
+@media (width<418px){
+    .text{
+        font-size: 10px;
+    }
+    .navbar-dropdown{
+        font-size: 13px;
+    }
+    .cart-logo{
+        height:30px;
+    }
+}
+@media (width < 365px){
+    .cart-text{
+        display: none;
+    }
+    .cart-size{
+        left: -15px;
+    }
+}
